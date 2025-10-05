@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FWP Oportunidad de Negocio - Luisa Figueroa</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    // Reemplaza '1234567890' con tu ID de Píxel de Meta real
+    fbq('init', '1234567890');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1234567890&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* New Brand Palette from Image: Pink and Black */
+        .bg-brand-primary { background-color: #000000; } /* Black */
+        .hover\:bg-brand-primary-dark:hover { background-color: #111111; } /* Darker Grey */
+        
+        .bg-brand-accent { background-color: #F91880; } /* Vibrant Pink from image */
+        .hover\:bg-brand-accent-dark:hover { background-color: #E01270; } /* Darker Pink */
+        .text-brand-accent { color: #F91880; }
+        .border-brand-accent { border-color: #F91880; }
+
+        .hero-section {
+            background-color: #000000;
+        }
+        .product-card, .testimonial-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .product-card:hover, .testimonial-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+        .testimonial-card .fa-star {
+            color: #F59E0B; /* amber-400 */
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-xl font-bold text-gray-700">
+                <a href="#">FWP <span class="text-brand-accent font-semibold">Luisa Figueroa</span></a>
+            </div>
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="#inicio" class="text-gray-600 hover:text-brand-accent transition duration-300">Inicio</a>
+                <a href="#negocio" class="text-gray-600 hover:text-brand-accent transition duration-300">Negocio</a>
+                <a href="#testimonios" class="text-gray-600 hover:text-brand-accent transition duration-300">Testimonios</a>
+                <a href="https://wa.me/message/FEK7ATUCN4VDM1" target="_blank" class="bg-brand-accent text-white py-2 px-4 rounded-lg hover:bg-brand-accent-dark transition duration-300">Únete Ahora</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-800 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 border-t">
+            <a href="#inicio" class="block text-gray-600 hover:text-brand-accent py-2">Inicio</a>
+            <a href="#negocio" class="block text-gray-600 hover:text-brand-accent py-2">Negocio</a>
+            <a href="#testimonios" class="block text-gray-600 hover:text-brand-accent py-2">Testimonios</a>
+            <a href="https://wa.me/message/FEK7ATUCN4VDM1" target="_blank" class="block bg-brand-accent text-white text-center mt-2 py-2 px-4 rounded-lg hover:bg-brand-accent-dark transition duration-300">Únete Ahora</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="inicio" class="hero-section text-white min-h-[70vh] flex items-center justify-center py-20">
+            <div class="text-center max-w-3xl mx-auto px-4">
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">Transforma tu Vida y Finanzas con FWP</h1>
+                <p class="text-lg md:text-xl mb-8 text-slate-200">Descubre una oportunidad única para emprender, generar ingresos y crecer con productos que la gente ama.</p>
+                <a href="https://wa.me/message/FEK7ATUCN4VDM1" target="_blank" class="bg-brand-accent text-white font-bold py-3 px-8 rounded-full hover:bg-brand-accent-dark transition duration-300 text-lg shadow-lg">Quiero Emprender</a>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="negocio" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-2">La Base de Nuestro Negocio</h2>
+                <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">Productos de alta calidad que ofrecen resultados reales. Esa es la clave de nuestro éxito y la razón por la que nuestros distribuidores prosperan.</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                    
+                    <!-- Product Card: Renova Plus -->
+                    <div class="bg-slate-50 rounded-xl overflow-hidden shadow-lg product-card flex flex-col">
+                        <div class="bg-white p-6 flex justify-center items-center h-72">
+                            <img src="https://storage.googleapis.com/gemini-prod-us-west1-d00c/prompt_images/IMG-20250625-WA0056.jpg" alt="Producto Renova Plus" class="max-h-full object-contain">
+                        </div>
+                        <div class="p-6 flex-grow flex flex-col">
+                            <h3 class="text-2xl font-bold mb-2 text-gray-800">Renova+</h3>
+                            <p class="text-gray-600 flex-grow mb-4">Tu dosis diaria de juventud. Colágeno hidrolizado para piel, uñas y cabello.</p>
+                            <a href="#" class="mt-auto w-full text-center bg-brand-accent text-white font-bold py-3 px-6 rounded-lg hover:bg-brand-accent-dark transition duration-300">Saber más</a>
+                        </div>
+                    </div>
+
+                    <!-- Product Card: 24Burn -->
+                    <div class="bg-slate-50 rounded-xl overflow-hidden shadow-lg product-card flex flex-col">
+                         <div class="bg-white p-6 flex justify-center items-center h-72">
+                            <img src="https://storage.googleapis.com/gemini-prod-us-west1-d00c/prompt_images/IMG-20250625-WA0067.jpg" alt="Producto 24Burn" class="max-h-full object-contain">
+                        </div>
+                        <div class="p-6 flex-grow flex flex-col">
+                            <h3 class="text-2xl font-bold mb-2 text-gray-800">24Burn</h3>
+                            <p class="text-gray-600 flex-grow mb-4">Reduce y activa todos los días. Acelera tu metabolismo de forma natural.</p>
+                            <a href="#" class="mt-auto w-full text-center bg-brand-accent text-white font-bold py-3 px-6 rounded-lg hover:bg-brand-accent-dark transition duration-300">Saber más</a>
+                        </div>
+                    </div>
+
+                    <!-- Product Card: Eboost -->
+                    <div class="bg-slate-50 rounded-xl overflow-hidden shadow-lg product-card flex flex-col">
+                        <div class="bg-white p-6 flex justify-center items-center h-72">
+                            <img src="https://storage.googleapis.com/gemini-prod-us-west1-d00c/prompt_images/MOCKUP-CAJA-EBOOST-CHILE.jpg" alt="Producto Eboost" class="max-h-full object-contain">
+                        </div>
+                        <div class="p-6 flex-grow flex flex-col">
+                            <h3 class="text-2xl font-bold mb-2 text-gray-800">Eboost</h3>
+                            <p class="text-gray-600 flex-grow mb-4">Potencia, enfoque y energía para superar tu rutina diaria.</p>
+                            <a href="#" class="mt-auto w-full text-center bg-brand-accent text-white font-bold py-3 px-6 rounded-lg hover:bg-brand-accent-dark transition duration-300">Saber más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonios" class="py-20 bg-slate-100">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-2">Historias de Éxito</h2>
+                <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">Personas como tú que transformaron su bienestar y sus finanzas. Ellos son la prueba de que es posible.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg testimonial-card text-center">
+                        <img src="https://placehold.co/100x100/E2E8F0/4A5568?text=Ana" alt="Testimonio de Ana" class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-brand-accent">
+                        <div class="mb-4">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 mb-4">"Empecé usando Renova+ y los resultados en mi piel fueron increíbles. La gente me preguntaba qué estaba haciendo. Decidí compartir mi secreto, ¡y sin darme cuenta empecé a generar ingresos extras que ahora son mi principal fuente!"</p>
+                        <h4 class="font-bold text-lg text-gray-900">Ana Pérez</h4>
+                        <p class="text-gray-500">Distribuidora FWP</p>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg testimonial-card text-center">
+                        <img src="https://placehold.co/100x100/E2E8F0/4A5568?text=Carlos" alt="Testimonio de Carlos" class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-brand-accent">
+                        <div class="mb-4">
+                           <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 mb-4">"Como deportista, buscaba más energía y 24Burn fue un cambio total. Me sentí tan bien que empecé a recomendarlo en el gimnasio. Hoy lidero un equipo de distribuidores y disfruto de una libertad financiera que nunca imaginé."</p>
+                        <h4 class="font-bold text-lg text-gray-900">Carlos Rojas</h4>
+                        <p class="text-gray-500">Distribuidor FWP</p>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg testimonial-card text-center">
+                        <img src="https://placehold.co/100x100/E2E8F0/4A5568?text=Maria" alt="Testimonio de Maria" class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-brand-accent">
+                        <div class="mb-4">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 mb-4">"Al principio era escéptica, pero probé los productos y me enamoré. Comencé a distribuirlos a tiempo parcial y el apoyo que recibí fue increíble. Ahora manejo mi propio horario y he duplicado los ingresos de mi antiguo trabajo."</p>
+                        <h4 class="font-bold text-lg text-gray-900">María Vega</h4>
+                        <p class="text-gray-500">Distribuidora FWP</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- About Us Section -->
+        <section id="sobre-nosotros" class="py-20 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                 <h2 class="text-3xl font-bold text-gray-800 mb-4">Tu Guía en este Camino</h2>
+                 <p class="max-w-3xl mx-auto text-gray-600 leading-relaxed">
+                     ¡Hola! Soy Luisa Figueroa. Mi pasión es ayudar a personas a descubrir su potencial. No solo te ofrezco productos excepcionales, sino la oportunidad de construir tu propio negocio. Mi compromiso es guiarte, entregarte las herramientas y el apoyo que necesitas para que alcances el éxito que mereces, tanto en bienestar como financiero.
+                 </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="contacto" class="bg-brand-primary text-white">
+        <div class="container mx-auto px-6 py-16 text-center">
+             <h2 class="text-3xl font-bold mb-4">¿Estás Lista para Empezar?</h2>
+             <p class="text-slate-300 mb-8 max-w-xl mx-auto">Únete a un equipo de emprendedores que están cambiando sus vidas. Contáctame hoy mismo para dar el primer paso.</p>
+             <a href="https://wa.me/message/FEK7ATUCN4VDM1" target="_blank" class="bg-brand-accent text-white font-bold py-3 px-8 rounded-full hover:bg-brand-accent-dark transition duration-300 text-lg shadow-lg">Enviar un Mensaje</a>
+            <div class="text-center text-slate-400 border-t border-gray-800 mt-12 pt-8">
+                <p>&copy; 2025 Luisa Figueroa - Distribuidora Oficial FWP. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
+
