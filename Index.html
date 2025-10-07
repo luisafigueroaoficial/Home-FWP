@@ -81,10 +81,10 @@
             background-size: cover;
             background-position: center;
         }
-        .product-card, .testimonial-card, .step-card {
+        .product-card, .testimonial-card, .step-card, .benefit-card {
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        .product-card:hover, .testimonial-card:hover, .step-card:hover {
+        .product-card:hover, .testimonial-card:hover, .step-card:hover, .benefit-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
         }
@@ -105,6 +105,7 @@
             <div class="hidden md:flex items-center space-x-6">
                 <a href="#inicio" class="text-gray-600 hover:text-brand-accent transition duration-300">Inicio</a>
                 <a href="#negocio" class="text-gray-600 hover:text-brand-accent transition duration-300">Negocio</a>
+                <a href="#beneficios" class="text-gray-600 hover:text-brand-accent transition duration-300">Beneficios</a>
                 <a href="#testimonios" class="text-gray-600 hover:text-brand-accent transition duration-300">Testimonios</a>
                 <a href="https://wa.me/message/FEK7ATUCN4VDM1" target="_blank" class="bg-brand-accent text-white py-2 px-4 rounded-lg hover:bg-brand-accent-dark transition duration-300">Únete Ahora</a>
             </div>
@@ -119,6 +120,7 @@
         <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 border-t">
             <a href="#inicio" class="block text-gray-600 hover:text-brand-accent py-2">Inicio</a>
             <a href="#negocio" class="block text-gray-600 hover:text-brand-accent py-2">Negocio</a>
+            <a href="#beneficios" class="block text-gray-600 hover:text-brand-accent py-2">Beneficios</a>
             <a href="#testimonios" class="block text-gray-600 hover:text-brand-accent py-2">Testimonios</a>
             <a href="https://wa.me/message/FEK7ATUCN4VDM1" target="_blank" class="block bg-brand-accent text-white text-center mt-2 py-2 px-4 rounded-lg hover:bg-brand-accent-dark transition duration-300">Únete Ahora</a>
         </div>
@@ -203,15 +205,61 @@
                 </div>
             </div>
         </section>
+        
+        <!-- NEW Benefits Section -->
+        <section id="beneficios" class="py-20 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-extrabold text-gray-900 mb-4">Más que un Negocio, una Plataforma Completa para tu Crecimiento</h2>
+                <p class="text-gray-600 mb-12 max-w-3xl mx-auto">Al unirte, no solo accedes a productos a precio de mayorista. Te entregamos un ecosistema de herramientas y formación para asegurar tu éxito.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Benefit 1: Digital Training -->
+                    <div class="bg-slate-50 p-8 rounded-xl shadow-lg benefit-card">
+                        <div class="text-brand-accent text-4xl mb-4"><i class="fas fa-bullhorn"></i></div>
+                        <h3 class="text-xl font-bold mb-2">Formación Digital de Vanguardia</h3>
+                        <p class="text-gray-600">Aprende paso a paso a crear tu marca personal, dominar tus redes sociales (desde cero) y lanzar publicidad efectiva en Meta y TikTok Ads.</p>
+                    </div>
+                    <!-- Benefit 2: Business Academy -->
+                    <div class="bg-slate-50 p-8 rounded-xl shadow-lg benefit-card">
+                        <div class="text-brand-accent text-4xl mb-4"><i class="fas fa-brain"></i></div>
+                        <h3 class="text-xl font-bold mb-2">Academia de Negocios</h3>
+                        <p class="text-gray-600">Accede a capacitaciones semanales sobre ventas, marketing digital e Inteligencia Artificial para potenciar tus resultados y estar siempre a la delantera.</p>
+                    </div>
+                    <!-- Benefit 3: Sales Tools -->
+                    <div class="bg-slate-50 p-8 rounded-xl shadow-lg benefit-card">
+                        <div class="text-brand-accent text-4xl mb-4"><i class="fas fa-laptop-code"></i></div>
+                        <h3 class="text-xl font-bold mb-2">Tu Propia Página Web ¡De Regalo!</h3>
+                        <p class="text-gray-600">Recibe tu propia tienda online personalizada, lista para vender 24/7 con links directos a tu WhatsApp o pasarela de pagos. ¡Tu negocio automatizado!</p>
+                    </div>
+                    <!-- Benefit 4: Personal Development -->
+                    <div class="bg-slate-50 p-8 rounded-xl shadow-lg benefit-card">
+                        <div class="text-brand-accent text-4xl mb-4"><i class="fas fa-chart-line"></i></div>
+                        <h3 class="text-xl font-bold mb-2">Mentalidad Empresarial</h3>
+                        <p class="text-gray-600">Trabajamos contigo en el desarrollo personal y la mentalidad correcta para que pases de ser empleado a un verdadero dueño de negocio exitoso.</p>
+                    </div>
+                    <!-- Benefit 5: Community -->
+                    <div class="bg-slate-50 p-8 rounded-xl shadow-lg benefit-card">
+                        <div class="text-brand-accent text-4xl mb-4"><i class="fas fa-users-cog"></i></div>
+                        <h3 class="text-xl font-bold mb-2">Comunidad y Acompañamiento</h3>
+                        <p class="text-gray-600">Nunca estarás solo. Sé parte de una comunidad que te guía, te apoya y celebra tus logros paso a paso hasta que alcances todos tus objetivos.</p>
+                    </div>
+                    <!-- Benefit 6: Exclusive Access -->
+                    <div class="bg-slate-50 p-8 rounded-xl shadow-lg benefit-card">
+                        <div class="text-brand-accent text-4xl mb-4"><i class="fas fa-tags"></i></div>
+                        <h3 class="text-xl font-bold mb-2">Beneficios Exclusivos</h3>
+                        <p class="text-gray-600">Además de todo el apoyo, obtén los productos a precio de mayorista, maximizando tus márgenes de ganancia desde la primera venta.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Testimonials Section -->
-        <section id="testimonios" class="py-20 bg-white">
+        <section id="testimonios" class="py-20 bg-slate-100">
             <div class="container mx-auto px-6">
                 <h2 class="text-3xl font-bold text-center text-gray-800 mb-2">Historias de Éxito</h2>
                 <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">Personas como tú que transformaron su bienestar y sus finanzas. Ellos son la prueba de que es posible.</p>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- Testimonial 1 -->
-                    <div class="bg-slate-50 p-8 rounded-xl shadow-lg testimonial-card text-center">
+                    <div class="bg-white p-8 rounded-xl shadow-lg testimonial-card text-center">
                         <div class="mb-4">
                             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                         </div>
@@ -220,7 +268,7 @@
                         <p class="text-gray-500">Distribuidora FWP</p>
                     </div>
                     <!-- Testimonial 2 -->
-                    <div class="bg-slate-50 p-8 rounded-xl shadow-lg testimonial-card text-center">
+                    <div class="bg-white p-8 rounded-xl shadow-lg testimonial-card text-center">
                         <div class="mb-4">
                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                         </div>
@@ -229,7 +277,7 @@
                         <p class="text-gray-500">Distribuidor FWP</p>
                     </div>
                     <!-- Testimonial 3 -->
-                    <div class="bg-slate-50 p-8 rounded-xl shadow-lg testimonial-card text-center">
+                    <div class="bg-white p-8 rounded-xl shadow-lg testimonial-card text-center">
                         <div class="mb-4">
                             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                         </div>
@@ -247,7 +295,7 @@
                 <div class="flex flex-col md:flex-row items-center gap-12 bg-white p-10 rounded-2xl shadow-xl">
                     <!-- Image Column -->
                     <div class="md:w-1/3 text-center">
-                        <img src="foto 1.jpg" alt="Luisa Figueroa" class="rounded-full w-60 h-60 mx-auto object-cover shadow-2xl border-4 border-white ring-4 ring-brand-accent">
+                        <img src="luisa-figueroa-perfil.jpg" alt="Luisa Figueroa" class="rounded-full w-60 h-60 mx-auto object-cover shadow-2xl border-4 border-white ring-4 ring-brand-accent">
                     </div>
                     <!-- Text Column -->
                     <div class="md:w-2/3">
@@ -286,4 +334,5 @@
 
 </body>
 </html>
+
 
