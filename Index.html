@@ -7,7 +7,7 @@
     <!-- Metatags SEO para Chile -->
     <title>FWP Oportunidad de Negocio Chile - Luisa Figueroa</title>
     <meta name="description" content="Únete a FWP con Luisa Figueroa en Chile. Una oportunidad de negocio para emprendedoras con productos de bienestar. Genera ingresos y transforma tu vida.">
-    <meta name="keywords" content="FWP Chile, negocio multinivel Chile, emprender en Chile, Luisa Figueroa, Renova+, 24Burn, Eboost, ingresos extras, emprendimiento digital, salud y bienestar">
+    <meta name="keywords" content="FWP Chile, negocio multinivel Chile, emprender en Chile, Luisa Figueroa, Renova+, 24Burn, ingresos extras, emprendimiento digital, salud y bienestar">
     <meta name="author" content="Luisa Figueroa">
     <meta name="robots" content="index, follow">
     <meta http-equiv="Content-Language" content="es-CL">
@@ -18,7 +18,7 @@
     <meta property="og:title" content="FWP Oportunidad de Negocio - Luisa Figueroa Chile">
     <meta property="og:description" content="Descubre cómo emprender con productos de salud y bienestar en Chile. Únete a mi equipo y alcanza tu independencia financiera.">
     <meta property="og:image" content="IMG-20250625-WA0056.jpg">
-    <meta property="og:url" content="https-www-tu-dominio-cl.com">
+    <meta property="og:url" content="https://www-tu-dominio-cl.com">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="es_ES">
     <meta property="og:site_name" content="FWP Luisa Figueroa">
@@ -35,7 +35,7 @@
     <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     
@@ -62,34 +62,29 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
         }
-        /* New Brand Palette from Image: Pink and Black */
-        .bg-brand-primary { background-color: #000000; } /* Black */
-        .hover\:bg-brand-primary-dark:hover { background-color: #111111; } /* Darker Grey */
+        .bg-brand-primary { background-color: #111827; } 
+        .hover\:bg-brand-primary-dark:hover { background-color: #1f2937; }
         
-        .bg-brand-accent { background-color: #F91880; } /* Vibrant Pink from image */
-        .hover\:bg-brand-accent-dark:hover { background-color: #E01270; } /* Darker Pink */
+        .bg-brand-accent { background-color: #F91880; }
+        .hover\:bg-brand-accent-dark:hover { background-color: #E01270; }
         .text-brand-accent { color: #F91880; }
         .border-brand-accent { border-color: #F91880; }
 
-        /* Custom Colors for Products */
-        .text-burn-green { color: #0c9600; }
-        .bg-burn-green { background-color: #0c9600; }
-        .hover\:bg-burn-green-dark:hover { background-color: #0a7d00; }
+        .text-burn-green { color: #16a34a; }
+        .bg-burn-green { background-color: #16a34a; }
+        .hover\:bg-burn-green-dark:hover { background-color: #15803d; }
         
-        .text-eboost-orange { color: #ff7a00; }
-        .bg-eboost-orange { background-color: #ff7a00; }
-        .hover\:bg-eboost-orange-dark:hover { background-color: #e66e00; }
-
         .hero-section {
             background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('foto 2.jpg');
             background-size: cover;
             background-position: center;
         }
-        .product-card, .testimonial-card {
+        .product-card, .testimonial-card, .step-card {
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        .product-card:hover, .testimonial-card:hover {
+        .product-card:hover, .testimonial-card:hover, .step-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
         }
@@ -134,7 +129,7 @@
         <!-- Hero Section -->
         <section id="inicio" class="hero-section text-white min-h-[70vh] flex items-center justify-center py-20">
             <div class="text-center max-w-3xl mx-auto px-4">
-                <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">Transforma tu Vida y Finanzas con FWP</h1>
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">Transforma tu Vida y Finanzas con FWP</h1>
                 <p class="text-lg md:text-xl mb-8 text-slate-200">Descubre una oportunidad única para emprender, generar ingresos y crecer con productos de consumo masivo y recurrente.</p>
                 <a href="https://wa.me/message/FEK7ATUCN4VDM1" target="_blank" class="bg-brand-accent text-white font-bold py-3 px-8 rounded-full hover:bg-brand-accent-dark transition duration-300 text-lg shadow-lg">Quiero Emprender</a>
             </div>
@@ -146,7 +141,7 @@
                 <h2 class="text-3xl font-bold text-center text-gray-800 mb-2">La Base de Nuestro Negocio</h2>
                 <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">Productos de alta calidad que ofrecen resultados reales. Esa es la clave de nuestro éxito y la razón por la que nuestros distribuidores prosperan.</p>
                 
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
                     
                     <!-- Product Card: Renova Plus -->
                     <div class="bg-slate-50 rounded-xl overflow-hidden shadow-lg product-card flex flex-col">
@@ -171,30 +166,52 @@
                             <a href="Landing page 24Burn.html" class="mt-auto w-full text-center bg-burn-green text-white font-bold py-3 px-6 rounded-lg hover:bg-burn-green-dark transition duration-300">Saber más</a>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
 
-                    <!-- Product Card: Eboost -->
-                    <div class="bg-slate-50 rounded-xl overflow-hidden shadow-lg product-card flex flex-col">
-                        <div class="bg-white p-6 flex justify-center items-center h-72">
-                            <img src="foto 3.jpg" alt="Producto Eboost" class="max-h-full object-contain">
+        <!-- How It Works Section -->
+        <section class="py-20 bg-slate-100">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Tu Camino al Éxito en 3 Simples Pasos</h2>
+                <p class="text-gray-600 mb-12 max-w-2xl mx-auto">Hemos creado un sistema sencillo para que puedas empezar a construir tu negocio desde el primer día.</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Step 1 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg step-card">
+                        <div class="bg-brand-accent text-white rounded-full h-16 w-16 flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-users text-2xl"></i>
                         </div>
-                        <div class="p-6 flex-grow flex flex-col">
-                            <h3 class="text-2xl font-bold text-eboost-orange text-center mb-2">Eboost</h3>
-                            <p class="text-gray-600 flex-grow mb-4 text-center">Potencia, enfoque y energía para superar tu rutina diaria.</p>
-                            <a href="landing-eboost.html" class="mt-auto w-full text-center bg-eboost-orange text-white font-bold py-3 px-6 rounded-lg hover:bg-eboost-orange-dark transition duration-300">Saber más</a>
+                        <h3 class="text-xl font-bold mb-2">1. Únete al Equipo</h3>
+                        <p class="text-gray-600">Regístrate y obtén acceso a nuestros productos de clase mundial y a un sistema de negocio comprobado.</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg step-card">
+                        <div class="bg-brand-accent text-white rounded-full h-16 w-16 flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-share-alt text-2xl"></i>
                         </div>
+                        <h3 class="text-xl font-bold mb-2">2. Comparte los Productos</h3>
+                        <p class="text-gray-600">Usa, ama y comparte los productos con tu red. Los resultados hablarán por sí solos y atraerán a tus primeros clientes.</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg step-card">
+                        <div class="bg-brand-accent text-white rounded-full h-16 w-16 flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-rocket text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">3. Construye tu Futuro</h3>
+                        <p class="text-gray-600">Gana comisiones y crea un equipo para generar ingresos residuales. No hay límites para tu crecimiento.</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Testimonials Section -->
-        <section id="testimonios" class="py-20 bg-slate-100">
+        <section id="testimonios" class="py-20 bg-white">
             <div class="container mx-auto px-6">
                 <h2 class="text-3xl font-bold text-center text-gray-800 mb-2">Historias de Éxito</h2>
                 <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">Personas como tú que transformaron su bienestar y sus finanzas. Ellos son la prueba de que es posible.</p>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- Testimonial 1 -->
-                    <div class="bg-white p-8 rounded-xl shadow-lg testimonial-card text-center">
+                    <div class="bg-slate-50 p-8 rounded-xl shadow-lg testimonial-card text-center">
                         <div class="mb-4">
                             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                         </div>
@@ -203,7 +220,7 @@
                         <p class="text-gray-500">Distribuidora FWP</p>
                     </div>
                     <!-- Testimonial 2 -->
-                    <div class="bg-white p-8 rounded-xl shadow-lg testimonial-card text-center">
+                    <div class="bg-slate-50 p-8 rounded-xl shadow-lg testimonial-card text-center">
                         <div class="mb-4">
                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                         </div>
@@ -212,7 +229,7 @@
                         <p class="text-gray-500">Distribuidor FWP</p>
                     </div>
                     <!-- Testimonial 3 -->
-                    <div class="bg-white p-8 rounded-xl shadow-lg testimonial-card text-center">
+                    <div class="bg-slate-50 p-8 rounded-xl shadow-lg testimonial-card text-center">
                         <div class="mb-4">
                             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                         </div>
@@ -225,12 +242,12 @@
         </section>
         
         <!-- About Us Section -->
-        <section id="sobre-nosotros" class="py-20 bg-white">
+        <section id="sobre-nosotros" class="py-20 bg-slate-50">
             <div class="container mx-auto px-6">
-                <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="flex flex-col md:flex-row items-center gap-12 bg-white p-10 rounded-2xl shadow-xl">
                     <!-- Image Column -->
                     <div class="md:w-1/3 text-center">
-                        <img src="foto 1.jpg" alt="Luisa Figueroa" class="rounded-full w-64 h-64 mx-auto object-cover shadow-2xl">
+                        <img src="foto 1.jpg" alt="Luisa Figueroa" class="rounded-full w-60 h-60 mx-auto object-cover shadow-2xl border-4 border-white ring-4 ring-brand-accent">
                     </div>
                     <!-- Text Column -->
                     <div class="md:w-2/3">
@@ -251,7 +268,7 @@
              <h2 class="text-3xl font-bold mb-4">¿Estás Lista para Empezar?</h2>
              <p class="text-slate-300 mb-8 max-w-xl mx-auto">Únete a un equipo de emprendedores que están cambiando sus vidas. Contáctame hoy mismo para dar el primer paso.</p>
              <a href="https://wa.me/message/FEK7ATUCN4VDM1" target="_blank" class="bg-brand-accent text-white font-bold py-3 px-8 rounded-full hover:bg-brand-accent-dark transition duration-300 text-lg shadow-lg">Enviar un Mensaje</a>
-            <div class="text-center text-slate-400 border-t border-gray-800 mt-12 pt-8">
+            <div class="text-center text-slate-400 border-t border-gray-700 mt-12 pt-8">
                 <p>&copy; 2025 Luisa Figueroa - Distribuidora Oficial FWP. Todos los derechos reservados.</p>
             </div>
         </div>
